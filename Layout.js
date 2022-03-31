@@ -21,7 +21,7 @@ document.body.appendChild(div);
 let div4 = document.createElement('div');
     div4.classList.add("container","mx-auto");
         let div2 = document.createElement('div');
-            div2.classList.add("grid", "grid-cols-6", "gap-4", "text-center", "grid-rows-6","mywidth", "mx-auto", "border-4", "gap-x-5", "gap-y-5", "mt-36", "border-none");
+            div2.classList.add("grid", "grid-cols-6", "gap-4", "text-center", "grid-rows-6","mywidth", "mx-auto", "border-4", "gap-x-5", "gap-y-5", "mt-36", "border-none","inputparent");
             for (let i =0;i<36;i++){
                 let div3 = document.createElement('div');
                     div3.classList.add("bg-blue-300", "border-2", "border-gray-800", "h-16", "w-16");

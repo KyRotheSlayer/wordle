@@ -1,14 +1,13 @@
-{
-"Woerter":[
-{"Name": "Abwege"}, {"Name": "Abwehr"}, {"Name": "Abbild"}, {"Name": "Ahnung"}, {"Name": "Abflug"}, {"Name": "Abgang"}, {"Name": "Abfall"}, {"Name": "Airbag"}, {"Name": "Aktion"}, {"Name": "Advent"}, {"Name": "Altbau"}, 
-{"Name": "Anlauf"}, {"Name": "Arbeit"}, {"Name": "Anteil"}, {"Name": "Anhang"}, {"Name": "Borste"}, {"Name": "Bohrer"}, {"Name": "Bonbon"}, {"Name": "Bronze"}, {"Name": "Daumen"}, {"Name": "Dekade"}, {"Name": "Dialog"}, 
-{"Name": "Diesel"}, {"Name": "Demenz"}, {"Name": "Cabrio"}, {"Name": "Chemie"}, {"Name": "Camper"}, {"Name": "Casino"}, {"Name": "Effekt"}, {"Name": "Erfolg"}, {"Name": "Eichel"}, {"Name": "Erwerb"}, {"Name": "Ersatz"}, 
-{"Name": "Einbau"}, {"Name": "Epoche"}, {"Name": "Erbgut"}, {"Name": "Erdgas"}, {"Name": "Etappe"}, {"Name": "Fieber"}, {"Name": "Farmer"}, {"Name": "Finger"}, {"Name": "Felgen"}, {"Name": "Felsen"}, {"Name": "Faktor"}, 
-{"Name": "Fichte"}, {"Name": "Fusion"}, {"Name": "Frosch"}, {"Name": "Ganove"}, {"Name": "Garage"}, {"Name": "Geduld"}, {"Name": "Gefahr"}, {"Name": "Gelenk"}, {"Name": "Gehalt"}, {"Name": "Genuss"}, {"Name": "Geburt"}, 
-{"Name": "Gebiss"}, {"Name": "Ghetto"}, {"Name": "Gitter"}, {"Name": "Granit"}, {"Name": "Geysir"}, {"Name": "Gewinn"}, {"Name": "Geweih"}, {"Name": "Grotte"}, {"Name": "Haufen"}, {"Name": "Hawaii"}, {"Name": "Himmel"}, 
-{"Name": "Hirsch"}, {"Name": "Hoheit"}, {"Name": "Hektar"}, {"Name": "Hopfen"}, {"Name": "Hospiz"}, {"Name": "Inhalt"}, {"Name": "Ingwer"}, {"Name": "Ironie"}, {"Name": "Irrweg"}, {"Name": "Imbiss"}, {"Name": "Impuls"}, 
-{"Name": "Junior"}, {"Name": "Kammer"}, {"Name": "Kanone"}, {"Name": "Kadett"}, {"Name": "Kaiser"}, {"Name": "Jogurt"}, {"Name": "Karies"}, {"Name": "Kartei"}, {"Name": "Klinik"}, {"Name": "Kleber"}, {"Name": "Kiefer"}, 
-{"Name": "Kiesel"}, {"Name": "Knecht"}, {"Name": "Kirmes"}, {"Name": "Kerker"}, {"Name": "Konvoi"}, {"Name": "Korken"}, {"Name": "KOlben"}, {"Name": "Kuchen"}, {"Name": "Krater"}, {"Name": "Kummer"}, {"Name": "Kumpel"}, 
-{"Name": "Konsum"}
-]
-}
+[ "Abwege", "Abwehr", "Abbild", "Ahnung", "Abflug", "Abgang", "Abfall", "Airbag", "Aktion", "Advent", "Altbau", 
+    "Anlauf", "Arbeit", "Anteil", "Anhang", "Borste", "Bohrer", "Bonbon", "Bronze", "Daumen", "Dekade", "Dialog", 
+    "Diesel", "Demenz", "Cabrio", "Chemie", "Camper", "Casino", "Effekt", "Erfolg", "Eichel", "Erwerb", "Ersatz", 
+    "Einbau", "Epoche", "Erbgut", "Erdgas", "Etappe", "Fieber", "Farmer", "Finger", "Felgen", "Felsen", "Faktor", 
+    "Fichte", "Fusion", "Frosch", "Ganove", "Garage", "Geduld", "Gefahr", "Gelenk", "Gehalt", "Genuss", "Geburt", 
+    "Gebiss", "Ghetto", "Gitter", "Granit", "Geysir", "Gewinn", "Geweih", "Grotte", "Haufen", "Hawaii", "Himmel", 
+    "Hirsch", "Hoheit", "Hektar", "Hopfen", "Hospiz", "Inhalt", "Ingwer", "Ironie", "Irrweg", "Imbiss", "Impuls", 
+    "Junior", "Kammer", "Kanone", "Kadett", "Kaiser", "Jogurt", "Karies", "Kartei", "Klinik", "Kleber", "Kiefer", 
+    "Kiesel", "Knecht", "Kirmes", "Kerker", "Konvoi", "Korken", "KOlben", "Kuchen", "Krater", "Kummer", "Kumpel", 
+    "Konsum"
+    ]
+    
+    

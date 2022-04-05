@@ -1,10 +1,11 @@
+//Navigationsleiste erzeugen
 let div = document.createElement('div');
 div.classList.add("w-screen", "m-0", "bg-gray-800" , "shadow-lg","pb-3", "pt-2", "text-center");
 
 // Hamburger Menu erzeugen
 let a = document.createElement('a');
-a.href="https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-a.classList.add("space-y-2", "float-left", "ml-4", "mt-3");
+a.classList.add("space-y-2", "float-left", "ml-4", "mt-3","hover:bg-gray-700","hover:border-gray-700","closedBar","z-20","sticky");
+a.setAttribute("onclick", "openSidebar()");
 let span1 = document.createElement('span');
 span1.classList.add("block","w-8" ,"h-1", "bg-blue-300");
 let span2 = document.createElement('span');
@@ -15,6 +16,21 @@ a.appendChild(span1);
 a.appendChild(span2);
 a.appendChild(span3);
 div.appendChild(a);
+
+//Sidebar erzeugen
+function openSidebar() {
+	let sidebar = document.createElement('div');
+	sidebar.classList.add("w-44", "h-screen", "bg-gray-800", "shadow-lg", "text-center","absolute","z-10","top-0","duration-300");
+	document.body.appendChild(sidebar);
+	sidebar.animate([
+		{width: '0%',},
+		{width: '176px',}
+		],{
+		duration: 200,
+		easing: 'ease-in-out',
+		});
+	a.classList.replace("closedBar","openBar");
+}
 
 // Überschrift erzeugen
 let h1 = document.createElement('h1');

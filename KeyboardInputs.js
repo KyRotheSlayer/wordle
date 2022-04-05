@@ -1,3 +1,4 @@
+//herauslesen der eingegeben Buchstaben und Eingabe in die Felder
 var i = 1;
 var Wort = [];
 document.body.addEventListener("keydown", function(event) {

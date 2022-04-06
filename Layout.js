@@ -18,18 +18,46 @@ a.appendChild(span3);
 div.appendChild(a);
 
 //Sidebar erzeugen
-function openSidebar() {
-	let sidebar = document.createElement('div');
-	sidebar.classList.add("w-44", "h-screen", "bg-gray-800", "shadow-lg", "text-center","absolute","z-10","top-0","duration-300");
+let sidebar = document.createElement('div');
+	sidebar.classList.add("w-44", "h-screen", "bg-gray-800", "shadow-lg", "text-center","absolute","z-10","top-0","-ml-44","duration-500");
 	document.body.appendChild(sidebar);
+
+//Funktion des Öffnens
+function openSidebar() {
 	sidebar.animate([
-		{width: '0%',},
-		{width: '176px',}
+		{left: '-176px'},
+		{left: '0px'},
 		],{
-		duration: 200,
+		duration: 500,
 		easing: 'ease-in-out',
 		});
-	a.classList.replace("closedBar","openBar");
+	span1.classList.remove("animate-firstoneclose");
+	span2.classList.remove("animate-secondoneclose");
+	span3.classList.remove("animate-thirdoneclose");
+	span1.classList.add("animate-firstoneopen","translate-y-[12px]","rotate-45","scale-125");
+	span2.classList.add("animate-secondoneopen","rotate-45","scale-125");
+	span3.classList.add("animate-thirdoneopen","translate-y-[-12px]","-rotate-45","scale-125");
+	sidebar.classList.replace("-ml-44","ml-0");
+	a.setAttribute("onclick", "closeSidebar()");
+}
+
+//Funktion des Schließens
+function closeSidebar() {
+	sidebar.animate([
+		{left: '0px',},
+		{left: '-176px',}
+		],{
+		duration: 500,
+		easing: 'ease-in-out',
+		});
+	span1.classList.remove("animate-firstoneopen","translate-y-[12px]","rotate-45","scale-125");
+	span2.classList.remove("animate-secondoneopen","rotate-45","scale-125");
+	span3.classList.remove("animate-thirdoneopen","translate-y-[-12px]","-rotate-45","scale-125");
+	span1.classList.add("animate-firstoneclose");
+	span2.classList.add("animate-secondoneclose");
+	span3.classList.add("animate-thirdoneclose");
+	sidebar.classList.replace("ml-0","-ml-44");
+	a.setAttribute("onclick", "openSidebar()");
 }
 
 // Überschrift erzeugen

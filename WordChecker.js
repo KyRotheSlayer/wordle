@@ -12,7 +12,7 @@ function WortCheck()
         }
         if (check == 6) 
         {
-            alert("Gewonnen!");
+            Popup("Gewonnen!");
             Wort.splice(0,6);
             Limit = Limit + 6;
             return;
@@ -22,7 +22,7 @@ function WortCheck()
             check = 0;
         }
     }
-    alert("Verloren!");
+    Popup("Verloren!");
     document.querySelector(".inputparent div:nth-child("+(counter-1)+")").firstChild.textContent = "";
     counter--;
     Wort.splice(counter-1,1);

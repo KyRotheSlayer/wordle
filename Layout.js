@@ -20,6 +20,11 @@ div.appendChild(a);
 //Sidebar erzeugen
 let sidebar = document.createElement('div');
 	sidebar.classList.add("w-44", "h-screen", "bg-gray-800", "shadow-lg", "text-center","absolute","z-10","top-0","-ml-44","duration-500");
+	let button = document.createElement('button');
+	button.classList.add("w-full", "h-12", "bg-blue-300", "text-white", "text-center", "font-bold", "rounded-lg", "shadow-lg", "mt-16", "mb-4");
+	button.textContent = "Popup";
+	button.setAttribute("onclick", "Popup('Hallo Welt')");
+	sidebar.appendChild(button);
 	document.body.appendChild(sidebar);
 
 //Funktion des Öffnens
@@ -83,3 +88,18 @@ for (let i =0;i<36;i++){
 }
 div4.appendChild(div2);
 document.body.appendChild(div4);
+
+
+//Popup erzeugen
+function Popup(text) {
+	let div6 = document.createElement('div');
+	div6.classList.add("mx-auto","bg-blue-300","w-64", "shadow-lg","text-center","z-30","-top-[530px]","relative","shadow-lg","shadow-gray-800","rounded-lg","duration-500",);
+	let h1 = document.createElement('h1');
+	h1.classList.add("text-5xl", "text-bg-gray-800");
+	h1.textContent=text;
+	div6.appendChild(h1);
+	document.body.appendChild(div6);
+	setTimeout(function(){
+		div6.remove();
+	},2000);
+}

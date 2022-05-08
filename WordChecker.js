@@ -1,29 +1,56 @@
 function WortCheck()
 {
-    let check = 0;
-    for (var i = 0; i < Words.length; i++) 
-    {
-        for (var j = 0; j<6;j++) 
-        {
-            if(Wort[j] == Words[i][j].toLowerCase())
-            {
-                check++;
-            }
-        }
-        if (check == 6) 
-        {
-            Popup("Gewonnen!");
-            Wort.splice(0,6);
-            Limit = Limit + 6;
-            return;
-        }
-        else
-        {
-            check = 0;
-        }
-    }
-    Popup("Verloren!");
-    document.querySelector(".inputparent div:nth-child("+(counter-1)+")").firstChild.textContent = "";
-    counter--;
-    Wort.splice(counter-1,1);
+	let check = 0;
+	var color = [];
+	var goal = 0;
+	var exceptvalue = "";
+	for (let i = 0; i < Words.length; i++) {
+		if (Wort.join("") == Words[i].toUpperCase()) {
+			check = 1;
+		}
+	}
+	if (check != 1) {
+		Popup("Verloren!");
+		document.querySelector(".inputparent div:nth-child("+(counter-1)+")").firstChild.textContent = "";
+		counter--;
+		Wort.splice(counter-1,1);
+		return
+	}
+	for (var i = 0; i < 6; i++) 
+	{
+		for (var j = 0; j<6;j++) 
+		{
+			if(j==i)
+			{
+				if((Wort[i].toUpperCase() == Words[random][j].toUpperCase()))
+				{
+					color[i] = "green";
+					goal++;
+					exceptvalue = exceptvalue + j;
+					break;
+				}
+			}
+			else
+			{
+				if((Wort[i].toUpperCase() == Words[random][j].toUpperCase()) && exceptvalue.indexOf(j.toString())==-1)
+				{
+					color[i] = "yellow";
+					exceptvalue = exceptvalue + j;
+					break;
+				}
+			}
+			}
+		}
+		exceptvalue = "";
+		if (goal == 6) {
+			Coloring(color);
+			WinSequence();
+			return;
+		}
+		Coloring(color);
+		Popup("Es ist ein Wort");
+		Wort.splice(0,6);
+		Limit = Limit + 6;
+		return;
+
 }

@@ -10,7 +10,7 @@ function WortCheck()
 		}
 	}
 	if (check != 1) {
-		Popup("Verloren!");
+		Popup("Not a word");
 		document.querySelector(".inputparent div:nth-child("+(counter-1)+")").firstChild.textContent = "";
 		counter--;
 		Wort.splice(counter-1,1);
@@ -47,8 +47,12 @@ function WortCheck()
 			WinSequence();
 			return;
 		}
+		else if (counter == 37) {
+			Coloring(color);
+			LooseSequence();
+			return;
+		}
 		Coloring(color);
-		Popup("Es ist ein Wort");
 		Wort.splice(0,6);
 		Limit = Limit + 6;
 		return;

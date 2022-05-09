@@ -101,5 +101,5 @@ function Popup(text) {
 	document.body.appendChild(div6);
 	setTimeout(function(){
 		div6.remove();
-	},2000);
+	},3500);
 }

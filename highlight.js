@@ -5,7 +5,7 @@ document.body.addEventListener("keydown", function(event) {
     document.querySelector(".inputparent div:nth-child("+counter+")").classList.add("animate-highlight");
     document.querySelector(".inputparent div:nth-child("+(counter-1)+")").classList.remove("animate-highlight");
     }
-    else if (event.code =="Backspace" && counter > 0 && finish == 0) {
+    else if (event.code =="Backspace" && counter > 0 && finish == 0 ) {
         document.querySelector(".inputparent div:nth-child("+(counter+1)+")").classList.remove("animate-highlight");
         document.querySelector(".inputparent div:nth-child("+counter+")").classList.add("animate-highlight");
     }
@@ -30,5 +30,11 @@ function Coloring(color)
 function WinSequence() {
     document.querySelector(".inputparent div:nth-child("+(counter)+")").classList.remove("animate-highlight");
     finish = 1;
+    Popup("Das war's!");
+    return;
+}
+function LooseSequence() {
+    finish = 1;
+    Popup("Schade!");
     return;
 }

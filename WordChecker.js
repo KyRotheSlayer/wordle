@@ -36,7 +36,6 @@ function WortCheck()
 				{
 					color[i] = "yellow";
 					exceptvalue = exceptvalue + j;
-					break;
 				}
 			}
 			}
